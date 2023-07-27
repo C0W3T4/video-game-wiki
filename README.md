@@ -14,3 +14,5 @@ This project was developed using the following technologies:
 - [Angular Material](https://material.angular.io/)
 - [RxJS](https://rxjs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [SCSS](https://sass-lang.com/)
