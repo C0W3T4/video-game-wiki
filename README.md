@@ -6,9 +6,9 @@ Application to view detailed and up-to-date information about various video game
 
 ## ✨ Technologies
 
-### Web app
-
 This project was developed using the following technologies:
+
+### Web app
 
 - [Angular](https://angular.io/)
 - [Angular Material](https://material.angular.io/)
