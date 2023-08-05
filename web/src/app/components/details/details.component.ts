@@ -7,10 +7,10 @@ import { HttpService } from 'src/app/services/http.service';
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
-  styleUrls: ['./details.component.scss']
+  styleUrls: ['./details.component.scss'],
 })
 export class DetailsComponent implements OnInit, OnDestroy {
-  gameRating: number = 0;
+  gameRating = 0;
   gameId!: string;
   game!: Game;
 
@@ -19,8 +19,8 @@ export class DetailsComponent implements OnInit, OnDestroy {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private httpService: HttpService
-  ) { }
+    private httpService: HttpService,
+  ) {}
 
   ngOnInit(): void {
     this.routeSub = this.activatedRoute.params.subscribe((params: Params) => {

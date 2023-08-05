@@ -8,7 +8,7 @@ import { HttpService } from './../../services/http.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit, OnDestroy {
   public sort!: string;
@@ -20,8 +20,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(
     private httpService: HttpService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
-  ) { }
+    private activatedRoute: ActivatedRoute,
+  ) {}
 
   ngOnInit(): void {
     this.routeSub = this.activatedRoute.params.subscribe((params: Params) => {

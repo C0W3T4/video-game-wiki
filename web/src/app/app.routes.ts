@@ -5,14 +5,14 @@ import { HomeComponent } from './components/home/home.component';
 export const appRoutes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'search/:game-search',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'details/:id',
-    component: DetailsComponent
-  }
+    component: DetailsComponent,
+  },
 ];

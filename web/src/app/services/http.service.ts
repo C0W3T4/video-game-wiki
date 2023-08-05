@@ -6,14 +6,14 @@ import { Game } from '../models/games';
 import { APIResponse } from '../models/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HttpService {
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getGameList(
     ordering: string,
-    search?: string
+    search?: string,
   ): Observable<APIResponse<Game>> {
     let params = new HttpParams().set('ordering', ordering);
 
@@ -21,9 +21,12 @@ export class HttpService {
       params = new HttpParams().set('ordering', ordering).set('search', search);
     }
 
-    return this.http.get<APIResponse<Game>>(`${environment.RAPID_API_BASE_URL}/games`, {
-      params: params
-    });
+    return this.http.get<APIResponse<Game>>(
+      `${environment.RAPID_API_BASE_URL}/games`,
+      {
+        params: params,
+      },
+    );
   }
 
   getGameDetails(id: string): Observable<Game> {
